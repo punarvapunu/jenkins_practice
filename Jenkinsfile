@@ -6,6 +6,7 @@ pipeline{
         stage("Checkout"){
             steps{
                 echo "excuting"
+                script{
                 def config = [
                     url: 'https://github.com/punarvapunu/maven_calculator_app-main.git',
                     branch: 'main',
@@ -20,6 +21,7 @@ pipeline{
                     ls -lrt 
             
                 '''
+                }
             }
 
 
