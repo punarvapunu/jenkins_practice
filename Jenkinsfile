@@ -1,5 +1,5 @@
 @Library("my_library") _
-pipeline {
+pipeline{
     agent any
    
     stages{
@@ -14,11 +14,17 @@ pipeline {
 
                        
                 ]
-                gitCheckout(config)           }
+                gitCheckout(config)   
+                sh '''
+                    pwd
+                    ls -lrt 
+            
+                '''
+                }
 
 
         }
 
-        }
+    }
 }
 
