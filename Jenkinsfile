@@ -10,7 +10,7 @@ pipeline{
                 def config = [
                     url: 'https://github.com/punarvapunu/maven_calculator_app-main.git',
                     branch: 'main',
-                    credentialsId: 'my_github'
+                    credentialsId: 'github_token'
                 
 
                        
